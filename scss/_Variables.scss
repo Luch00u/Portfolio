@@ -1,0 +1,32 @@
+//VARIABLES
+$fondoNav:rgb(4, 4, 77);
+
+
+// FUNCIONES SASS
+@mixin flexbox($display, $flex-direction, $justify, $align) {
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+//--------------------------------------------------------------------
+
+//---------------------- ANIMACIONES CSS -------------------------
+@keyframes efectoRotacion {
+  0%{
+    transform: translate(0,20px);
+  }
+  50%{
+    transform: translate(0,0px);
+  }
+  100%{
+    transform: translate(0,20px);
+  }
+}
+
+@keyframes efectoLuz {
+  0%{opacity: 30%;}
+  50%{opacity: 60%;}
+  100%{opacity: 30%;}
+}
